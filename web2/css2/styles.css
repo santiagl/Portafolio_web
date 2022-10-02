@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #B92525 ;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.tarjeta-container{
+    display: flex;
+    width: 700px;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2);
+}
+
+.header{
+    border-right: 1px solid #ddd;
+}
+
+.descripcion{
+    background: #fbfbfb;
+}
+
+.header, .descripcion{
+    padding: 20px;
+    text-align: center;
+}
+
+.header a{
+    position: relative;
+    display: block;
+}
+
+.header img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.219);
+    margin: 20px 40px;
+    transition: 1s;
+}
+
+.header a:hover img{
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.726);
+}
+
+.header h2{
+    color: #752f2f;
+}
+
+.header h3{
+    margin: 20px;
+}
+
+.descripcion{
+    position: relative;
+}
+
+.descripcion p{
+    margin: 20px 30px;
+}
+
+.descripcion .flechas{
+    margin-top: 80px;
+}
+
+.descripcion .flechas a{
+    display: inline-block;
+    padding: 0 15px;
+    color:#5B2D2D ;
+}
+.descripcion .redes a{
+    display: inline-block;
+    padding: 0 15px;
+    color: #B92525 ;
+}
+
+@media (max-width:640px){
+    .tarjeta-container{
+        display: block;
+        width: 450px;
+    }
+
+    .header{
+        padding:20px 20px 5px 20px;
+        border: none;
+    }
+
+    .descripcion{
+        padding: 5px 20px 20px 20px;
+        background: transparent ;
+    }
+
+    .header h3{
+        margin: 0;
+    }
+}
